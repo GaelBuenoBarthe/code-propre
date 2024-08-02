@@ -34,7 +34,6 @@ public class CompteBancaire {
 		this.solde += montant;
 	}
 
-	// Getters and setters
 	public double getSolde() {
 		return solde;
 	}
