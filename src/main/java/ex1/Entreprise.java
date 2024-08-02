@@ -33,7 +33,7 @@ public class Entreprise {
 	public static final int CAPITAL_MAX = 3000000;
 
 	/**
-	 * Affiche le statut de l'entreprise.
+	 * Affiche les informations sur l'entreprise.
 	 */
 	public void afficherStatut() {
 
