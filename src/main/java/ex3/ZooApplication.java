@@ -12,7 +12,7 @@ public class ZooApplication {
 
 		zoo.addAnimal(new Animal("Lion", AnimalType.MAMMIFERE, "Savane", RegimeAlimentaire.CARNIVORE));
 		zoo.addAnimal(new Animal("Éléphant", AnimalType.MAMMIFERE, "Savane", RegimeAlimentaire.HERBIVORE));
-		zoo.addAnimal(new Animal("Poisson-clown", AnimalType.POISSON, "Aquarium", RegimeAlimentaire.HERBIVORE));
+		zoo.addAnimal(new Animal("Carpe", AnimalType.POISSON, "Aquarium", RegimeAlimentaire.HERBIVORE));
 		zoo.addAnimal(new Animal("Python", AnimalType.REPTILE, "FermeReptile", RegimeAlimentaire.CARNIVORE));
 		zoo.addAnimal(new Animal("Tortue", AnimalType.REPTILE, "FermeReptile", RegimeAlimentaire.HERBIVORE));
 
