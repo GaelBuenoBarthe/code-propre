@@ -1,17 +1,21 @@
 package ex3;
+
+import ex3.entite.Animal;
+import ex3.entite.AnimalType;
+import ex3.entite.RegimeAlimentaire;
+import ex3.entite.Zoo;
+
 public class ZooApplication {
 
 	public static void main(String[] args) {
 		Zoo zoo = new Zoo("Thoiry");
-		
-		zoo.addAnimal("Gazelle", "MAMMIFERE", "HERBIVORE");
-		zoo.addAnimal("Zèbre", "MAMIFERE", "HERBIVORE");
-		zoo.addAnimal("Lion", "MAMMIFERE", "HERBIVORE");
-		zoo.addAnimal("Panthère", "MAMMIFERE", "CARNIVORE");
-		zoo.addAnimal("Requin blanc", "POISSON", "HERBIVORE");
-		zoo.addAnimal("Truite dorée", "POISSON", "HERBIVORE");
-		zoo.addAnimal("Boa constrictor", "SERPENT", "CARNIVORE");
-		zoo.addAnimal("Python", "SERPENT", "CARNIVORE");
-	}
 
+		zoo.addAnimal(new Animal("Lion", AnimalType.MAMMIFERE, "Savane", RegimeAlimentaire.CARNIVORE));
+		zoo.addAnimal(new Animal("Éléphant", AnimalType.MAMMIFERE, "Savane", RegimeAlimentaire.HERBIVORE));
+		zoo.addAnimal(new Animal("Poisson-clown", AnimalType.POISSON, "Aquarium", RegimeAlimentaire.HERBIVORE));
+		zoo.addAnimal(new Animal("Python", AnimalType.REPTILE, "FermeReptile", RegimeAlimentaire.CARNIVORE));
+		zoo.addAnimal(new Animal("Tortue", AnimalType.REPTILE, "FermeReptile", RegimeAlimentaire.HERBIVORE));
+
+		zoo.afficherListeAnimaux();
+	}
 }
